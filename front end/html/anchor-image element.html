@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Declares HTML5 -->
+<html lang="en"> <!-- Root element -->
+  <head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="description" content="Learning HTML Links and Images"> <!-- SEO description -->
+    <title>Anchor & Image Elements</title> <!-- Browser tab title -->
+  </head>
+  <body>
+    <!-- 03. Anchor Element (Links) -->
+
+    <!-- Basic Example: External link -->
+    <a href="https://google.com">Go to Google</a> 
+    <!-- 'href' = link destination -->
+
+    <br><br> <!-- Just adding space for readability -->
+
+    <!-- Medium Example: Internal link (to another file in same project) -->
+    <a href="about.html">About Page</a>
+    <!-- Links can point to another local HTML file -->
+
+    <br><br>
+
+    <!-- Advanced Example: Internal jump link -->
+    <a href="#section2">Jump to Section 2</a>
+    <!-- '#' + id lets you jump to a specific part of page -->
+    <h2 id="section2">Section 2</h2> <!-- Target section with id -->
+
+    <hr> <!-- Divider line -->
+
+    <!-- 04. Image Element -->
+
+    <!-- Basic Example: Simple image -->
+    <img src="dog.jpg" alt="Dog">
+    <!-- 'src' = image file, 'alt' = text if image doesn’t load -->
+
+    <br><br>
+
+    <!-- Medium Example: Resized image -->
+    <img src="flower.jpg" alt="Flower" width="200" height="150">
+    <!-- 'width' & 'height' resize the image -->
+
+    <br><br>
+
+    <!-- Advanced Example: Styled image -->
+    <img src="photo.png" alt="Sample" style="border:2px solid black;">
+    <!-- Inline CSS adds a border to the image -->
+  </body>
+</html>

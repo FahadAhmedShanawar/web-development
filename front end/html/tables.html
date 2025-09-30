@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Tables Examples">
+    <title>HTML Tables</title>
+  </head>
+  <body>
+    <h1>6. HTML Tables</h1>
+
+    <!-- 🔹 Basic Table -->
+    <h2>Basic Table</h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>20</td>
+      </tr>
+    </table>
+    <!-- 
+      ✅ Explanation:
+      <table> → table container
+      <tr> → row
+      <th> → table header (bold text)
+      <td> → table data cell
+    -->
+
+    <hr>
+
+    <!-- 🔹 Medium Table with thead & tbody -->
+    <h2>Medium Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td>Mango</td>
+          <td>$3</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- 
+      ✅ Explanation:
+      <thead> → header section
+      <tbody> → body section
+      Makes table structure more readable & professional
+    -->
+
+    <hr>
+
+    <!-- 🔹 Advanced Table with caption & rowspan -->
+    <h2>Advanced Table</h2>
+    <table border="1" style="border-collapse: collapse; width: 50%;">
+      <caption>Student Report</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ali</td> <!-- rowspan merges 2 rows -->
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>85</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- 
+      ✅ Explanation:
+      <caption> → table title
+      rowspan → merges cells vertically
+      border-collapse: collapse → cleaner borders
+      width: 50% → table takes half the page width
+    -->
+  </body>
+</html>

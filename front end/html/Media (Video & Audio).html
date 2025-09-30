@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Media Example">
+  <title>10. HTML Media (Video & Audio)</title>
+</head>
+<body>
+  <h1>10. HTML Media (Video & Audio)</h1>
+
+  <!-- 🔹 Basic Example -->
+  <h2>Basic – Video</h2>
+  <video src="movie.mp4" controls></video>
+  <!-- 
+    ✅ Explanation:
+    <video> → used to embed a video file.
+    src → path to the video file.
+    controls → adds play, pause, volume buttons.
+  -->
+
+  <hr>
+
+  <!-- 🔹 Medium Example -->
+  <h2>Medium – Audio</h2>
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+  <!-- 
+    ✅ Explanation:
+    <audio> → used to embed audio/music.
+    <source> → allows multiple file formats (mp3, ogg, wav).
+    Fallback text → shown if browser cannot play the audio.
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Example -->
+  <h2>Advanced – Video with Multiple Features</h2>
+  <video width="320" height="240" controls autoplay loop muted>
+    <source src="demo.mp4" type="video/mp4">
+    <source src="demo.ogg" type="video/ogg">
+    Your browser does not support video.
+  </video>
+  <!-- 
+    ✅ Explanation:
+    width & height → set video size.
+    autoplay → plays automatically when page loads.
+    loop → repeats the video after it ends.
+    muted → starts the video without sound (important for autoplay).
+    Multiple <source> → supports different browsers with different formats.
+  -->
+</body>
+</html>

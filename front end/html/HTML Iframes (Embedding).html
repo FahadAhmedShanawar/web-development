@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2. HTML Iframes (Embedding Websites/Maps)</title>
+</head>
+<body>
+  <h1>2. HTML Iframes (Embedding Websites/Maps)</h1>
+  <hr>
+
+  <!-- 🔹 Basic Example -->
+  <h2>Basic – Simple Iframe</h2>
+  <iframe src="https://www.example.com" width="400" height="200"></iframe>
+  <!-- 
+    ✅ Loads another website inside your page.
+    ✅ width & height set the size of the frame.
+  -->
+
+  <hr>
+
+  <!-- 🔹 Medium Example -->
+  <h2>Medium – Styled Iframe</h2>
+  <iframe src="https://www.wikipedia.org" 
+          width="600" height="400" 
+          style="border:2px solid black;"></iframe>
+  <!-- 
+    ✅ Same as basic, but now styled with a border.
+    ✅ You can control width, height, and CSS styles.
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Example -->
+  <h2>Advanced – Google Maps Embed</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999528468789!2d2.292292615674087!3d48.85837307928788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdeb2df2d0f%3A0xf8f4f8d0b90e78b!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1670000000000!5m2!1sen!2sfr" 
+    width="600" height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <!-- 
+    ✅ Embeds Google Maps location.
+    ✅ allowfullscreen → lets map go fullscreen.
+    ✅ loading="lazy" → loads only when user scrolls to it (faster performance).
+    ✅ referrerpolicy → improves privacy/security.
+  -->
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Accessibility Examples">
+  <title>5. HTML Accessibility</title>
+</head>
+<body>
+  <h1>5. HTML Accessibility (alt, labels, ARIA)</h1>
+  <hr>
+
+  <!-- 🔹 Basic Example: alt attribute -->
+  <h2>Basic – alt attribute</h2>
+  <img src="dog.jpg" alt="A cute brown dog">
+  <!-- 
+    ✅ "alt" describes the image for screen readers
+    ✅ Also shows text if image cannot load
+  -->
+
+  <hr>
+
+  <!-- 🔹 Medium Example: Labels in Forms -->
+  <h2>Medium – Labels</h2>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </form>
+  <!-- 
+    ✅ <label> linked with input (via "for" + "id")
+    ✅ Screen readers read label when user focuses input
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Example: ARIA (Accessible Rich Internet Applications) -->
+  <h2>Advanced – ARIA attributes</h2>
+  <button aria-label="Close popup">X</button>
+
+  <nav role="navigation" aria-label="Main Menu">
+    <a href="#home">Home</a> |
+    <a href="#about">About</a>
+  </nav>
+  <!-- 
+    ✅ aria-label = provides extra description for screen readers
+    ✅ role="navigation" = defines purpose of element
+    ✅ Useful for blind users with assistive tech
+  -->
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3. HTML Responsive + Meta Viewport</title>
+
+  <!-- 🔹 Basic Example -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    ✅ Ensures the webpage scales correctly on mobile devices.
+    ✅ Without this, pages often look zoomed-out on phones.
+  -->
+</head>
+<body>
+  <h1>3. HTML Responsive + Meta Viewport</h1>
+  <hr>
+
+  <!-- 🔹 Medium Example: Responsive Image -->
+  <h2>Medium – Responsive Image</h2>
+  <img src="image.jpg" style="max-width:100%; height:auto;">
+  <!-- 
+    ✅ max-width:100% → Image never goes wider than screen
+    ✅ height:auto → Keeps aspect ratio (no stretching)
+    ✅ Works on desktop, tablet, and mobile
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Example: Media Queries -->
+  <h2>Advanced – Media Queries</h2>
+  <style>
+    .container {
+      width: 100%;
+      padding: 20px;
+      background: lightgray;
+      text-align: center;
+    }
+    /* If screen width is 600px or smaller */
+    @media (max-width: 600px) {
+      .container {
+        background: lightblue; /* Change background on small screens */
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <div class="container">📱 Resize the browser window to see the effect!</div>
+  <!-- 
+    ✅ Media queries = Apply different CSS for different screen sizes
+    ✅ Useful for mobile-first responsive design
+  -->
+</body>
+</html>

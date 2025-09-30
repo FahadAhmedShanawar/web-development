@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Block vs Inline Elements">
+  <title>8. HTML Block vs Inline</title>
+</head>
+<body>
+  <h1>8. HTML Block vs Inline Elements</h1>
+
+  <!-- 🔹 Basic Example -->
+  <h2>Basic</h2>
+  <div>This is a block element</div>
+  <span>This is an inline element</span>
+  <!-- 
+    ✅ Explanation:
+    <div> = block → takes full width, starts on a new line
+    <span> = inline → only takes as much space as the text
+  -->
+
+  <hr>
+
+  <!-- 🔹 Medium Example -->
+  <h2>Medium</h2>
+  <p>This is a paragraph (block).</p>
+  <a href="#">This is a link (inline)</a>
+  <strong>Bold text (inline)</strong>
+  <!-- 
+    ✅ Explanation:
+    <p> = block → pushes next content to new line
+    <a> & <strong> = inline → appear next to each other
+    Shows mixing block & inline
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Example -->
+  <h2>Advanced</h2>
+  <div style="border:1px solid black; padding:10px;">
+    <h2>Block Example</h2>
+    <p>This div contains multiple elements.</p>
+  </div>
+
+  <p>
+    This is <span style="color:red;">inline styled text</span>.
+  </p>
+  <!-- 
+    ✅ Explanation:
+    Block-level element (div) → can hold many elements, styled with border & padding
+    Inline element (span) → styled inside a sentence (color red here)
+  -->
+</body>
+</html>

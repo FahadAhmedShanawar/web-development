@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Forms Examples">
+  <title>7. HTML Forms & Input</title>
+</head>
+<body>
+  <h1>7. HTML Forms & Input</h1>
+
+  <!-- 🔹 Basic Form -->
+  <h2>Basic Example</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text">
+    <input type="submit" value="Send">
+  </form>
+  <!-- 
+    ✅ Explanation:
+    <form> → container for input fields
+    <input type="text"> → text box
+    <input type="submit"> → button to send form data
+  -->
+
+  <hr>
+
+  <!-- 🔹 Medium Form -->
+  <h2>Medium Example</h2>
+  <form>
+    <label>Email:</label>
+    <input type="email" required>
+    <br>
+    <label>Password:</label>
+    <input type="password">
+    <br>
+    <input type="checkbox"> Remember me
+    <br>
+    <button type="submit">Login</button>
+  </form>
+  <!-- 
+    ✅ Explanation:
+    type="email" → email format validation
+    required → field must be filled
+    type="password" → hides input
+    checkbox → option toggle
+    <button> → another way to submit
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Form -->
+  <h2>Advanced Example</h2>
+  <form>
+    <label>Upload File:</label>
+    <input type="file">
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br><br>
+
+    <label>Country:</label>
+    <select>
+      <option>Pakistan</option>
+      <option>USA</option>
+      <option>UK</option>
+    </select>
+    <br><br>
+
+    <textarea placeholder="Write your message"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  <!-- 
+    ✅ Explanation:
+    type="file" → upload documents/images
+    type="radio" → choose one option (must share same 'name')
+    <select> → dropdown list
+    <textarea> → multi-line input
+    <input type="submit"> → final form submission
+  -->
+</body>
+</html>

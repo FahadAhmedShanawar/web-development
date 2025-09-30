@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Forms Advanced - Input Attributes & Validation">
+  <title>1. HTML Forms Advanced</title>
+</head>
+<body>
+  <h1>1. HTML Forms Advanced (Input Attributes & Validation)</h1>
+
+  <!-- 🔹 Basic Example -->
+  <h2>Basic</h2>
+  <form>
+    <input type="text" name="username" required>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- 
+    ✅ Explanation:
+    required → makes the input mandatory.
+    Without filling, the form cannot be submitted.
+  -->
+
+  <hr>
+
+  <!-- 🔹 Medium Example -->
+  <h2>Medium</h2>
+  <form>
+    <input type="email" name="userEmail" placeholder="Enter your email" required>
+    <br><br>
+    <input type="number" name="age" min="18" max="60" placeholder="Age (18-60)">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- 
+    ✅ Explanation:
+    type="email" → input must be a valid email format (e.g. test@mail.com).
+    placeholder → shows hint text inside input box.
+    min & max → restrict number values (only accepts 18 to 60).
+  -->
+
+  <hr>
+
+  <!-- 🔹 Advanced Example -->
+  <h2>Advanced</h2>
+  <form>
+    <input type="password" 
+           pattern=".{8,}" 
+           title="Minimum 8 characters required" 
+           placeholder="Enter Password"
+           required>
+    <br><br>
+    <input type="url" name="website" placeholder="https://example.com">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- 
+    ✅ Explanation:
+    type="password" → hides typed characters.
+    pattern=".{8,}" → regex rule: at least 8 characters.
+    title → shows hint message if rule not followed.
+    type="url" → ensures correct URL format (https://...).
+  -->
+</body>
+</html>
